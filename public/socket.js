@@ -24,7 +24,7 @@ socket.on("message",function(chatObj){
     let leftChat =document.createElement("div");
     leftChat.classList.add("chat");
     leftChat.classList.add("left");
-    leftChat.textContent = chatObj.chat;
+    leftChat.textContent = chatObj.username+" :"+chatObj.chat;
     chatWindow.append(leftChat);
     
 
