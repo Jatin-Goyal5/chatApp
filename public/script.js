@@ -1,19 +1,30 @@
-let chatWindow = document.querySelector(".chat-window");
-let inputBox = document.querySelector(".chat-input");
-let myName = document.querySelector(".me .user-name");
-let username = prompt("Enter Your Name ");
-myName.textContent= username;
 
-inputBox.addEventListener("keypress",function(e){
-    if(e.key == "Enter"){
-        let userInput = document.createElement('div');
-        userInput.classList.add("chat");
-        userInput.classList.add("right");
-        userInput.textContent = inputBox.value;
-        chatWindow.append(userInput);
-        socket.emit("chat",{username,"chat":inputBox.value});
-        inputBox.value="";
-        
 
+let chatInput = document.querySelector('.chat-input')
+let chatWindow = document.querySelector('.chat-window')
+
+let username = prompt('Enter Your Name ');
+function userName() {
+    username = prompt('Enter Your Name ');
+}
+while(!username){
+    userName();
+}
+
+chatInput.addEventListener('keypress', (e) => {
+    if(e.key == 'Enter'){
+        let chatDiv = document.createElement('div');
+        chatDiv.classList.add('chat');
+        chatDiv.classList.add('right');
+        chatDiv.textContent = username + ': ' + chatInput.value;
+        chatWindow.append(chatDiv);
+        chatInput.value = '';
     }
-});
+})
+
+
+function openMenu() {
+    let leftView = document.querySelector('.left-view');
+    leftView.classList.toggle('active');
+}
+

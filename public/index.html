@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link href="./style.css" rel="styleSheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="style.css" rel="styleSheet">
     <title>p2gChat</title>
 </head>
 <body>
     <div class ="chat-app">
        <div class="header">
         <div class ="title">
+            <i class="fas fa-bars menuIcon" onclick="openMenu();"></i>
             <i class="fas fa-comment-dots titleIcon"></i>
-            <div>chatApp</div>
+            <div>ChatApp</div>
                
            </div>
            <div class="function">
@@ -27,21 +28,22 @@
             <div class="left-view">
                 <div class="me">
                     <div class="user-image">
-                        <img src ="user.png">
+                        <img src ="https://image.flaticon.com/icons/png/128/2922/2922688.png">
                     </div>
                     <div class="user-name"></div>
                 </div>
-                <div class="online-list">online</div>
+                <div class="online-list">Online Users</div>
             </div>
             <div class="right-view">
                 <div class="chat-window">
-                    <!-- <div class="chat joined">Steave joined</div>
+                    <h2>Start a Chat &#128520;&#128526;&#128525;</h2>
+                    <div class="chat joined">Steave joined</div>
                     <div class="chat leave">Steve leave</div>
                     <div class="chat left">hello</div>
-                    <div class="chat right">Hi , everyone</div> -->
+                    <div class="chat right">Hi , everyone</div>
                 </div>
                 <div class="chat-input-box">
-                    <input type="text" class = "chat-input">
+                    <input type="text" placeholder="Enter Your Message" class = "chat-input">
                 </div>
             </div>
         </div>
@@ -51,7 +53,7 @@
     <script>
         const socket = io();
     </script>
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
     <script src="./socket.js"></script>
 
 </body>
