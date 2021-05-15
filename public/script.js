@@ -18,6 +18,7 @@ chatInput.addEventListener('keypress', (e) => {
         chatDiv.classList.add('right');
         chatDiv.textContent = username + ': ' + chatInput.value;
         chatWindow.append(chatDiv);
+        socket.emit("chat" , {username , chat:chatInput.value});
         chatInput.value = '';
     }
 })

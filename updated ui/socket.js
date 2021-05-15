@@ -6,7 +6,7 @@ socket.on("join",function(joinUser){
     let joinedTime = new Date().toLocaleTimeString(); 
     let joinDiv = document.createElement("div");
     joinDiv.classList.add("chat");
-    joinDiv.classList.add("join");
+    joinDiv.classList.add("joined");
     joinDiv.textContent = joinUser.username+ ` joined at ${joinedTime}`;
     chatWindow.append(joinDiv);
     addUserInList(joinUser);
