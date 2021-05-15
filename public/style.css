@@ -246,9 +246,9 @@ i{
     left: 0;
     transform: translateX(-200px);
     transition: all 0.5s;
-    box-shadow: 10px 0 60px rgba(0,0,0,0.6);
     }
     .left-view.active{
+        box-shadow: 10px 0 60px rgba(0,0,0,0.6);
         transform: translateX(0);
     }
 }
