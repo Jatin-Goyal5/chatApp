@@ -40,6 +40,7 @@ function showDialog(){
 setTimeout(function() {
 
   if( document.hasFocus() ){
+      alert('check auth')
      // Truecaller app not present on the device and you redirect the user 
      // to your alternate verification page
   }else{
