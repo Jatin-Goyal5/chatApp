@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -240,7 +240,7 @@ i{
     width: 200px;
     overflow: auto;
     position: absolute;
-    z-index: 3;
+    z-index: 3; 
     top: 0;
     left: 0;
     transform: translateX(-200px);
@@ -250,4 +250,4 @@ i{
         box-shadow: 10px 0 60px rgba(0,0,0,0.6);
         transform: translateX(0);
     }
-}
+} */

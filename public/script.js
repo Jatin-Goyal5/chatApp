@@ -29,3 +29,7 @@ function openMenu() {
     leftView.classList.toggle('active');
 }
 
+function showDialog(){
+    console.log('hello');
+}
+
